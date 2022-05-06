@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+}
+
+.container {
+    max-width: 100%;
+    padding: 0 15px;
+}
+
+.header {
+    padding: 15px 0;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+@media(min-width: 992px) {
+    .header {
+        background-color: red;
+    }
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.burger {
+    display: block;
+    width: 32px;
+    height: 32px;
+    background-color: black;
+}
+
+.logo {
+    color: inherit;
+    text-decoration: none;
+    display: block;
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+}
+
+main {
+    background-color: lightblue;
+    height: 1000px;
+}
+
+.programm {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+    height: 300px;
+    position: relative;
+}
+
+.programm__img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.programm__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
